@@ -1,28 +1,42 @@
-﻿// For an introduction to the Blank template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkID=397704
-// To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
-// and then run "window.location.reload()" in the JavaScript Console.
-(function () {
-    "use strict";
+﻿var app = {
+    //Application Constructor
+    initialize: function () {
+        this.bindEvents();
+    },
+    //Bind Event listeners
+    bindEvents: function () {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    onDeviceReady: function () {
+        //Open SQLite Database
 
-    document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+        //Start by getting the departments for home page
+    }
+};
 
-    function onDeviceReady() {
-        // Handle the Cordova pause and resume events
-        document.addEventListener( 'pause', onPause.bind( this ), false );
-        document.addEventListener( 'resume', onResume.bind( this ), false );
-        
-        // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
-        var element = document.getElementById("deviceready");
-        element.innerHTML = 'Device Ready';
-        element.className += ' ready';
-    };
+//Initialize 
+app.initialize();
 
-    function onPause() {
-        // TODO: This application has been suspended. Save application state here.
-    };
+//Get all departments 
+function getDepartments() {
 
-    function onResume() {
-        // TODO: This application has been reactivated. Restore application state here.
-    };
-} )();
+}
+//end getDepartments
+
+//Get all employees for a specific department
+function getEmployeesByDept(departmentId) {
+
+}
+//end getEmployeesByDept
+
+//Get a single employee
+function getEmployee(id) {
+
+}
+//end getEmployee
+
+//================================ UI EVENT HANDLERS =======================================//
+//deptEmp Events:  (From department to employees)
+
+
+//Emp details Event (For showing employee details)

@@ -10,7 +10,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="css/themes/businessApp.min.css" rel="stylesheet" />
+    <link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>BusinessApp2016</title>
 </head>
@@ -18,11 +20,55 @@
     <!-- Home page:  showing a list of departments -->
     <div data-role="page" id="home">
         <header data-role="header">
-
+            <img src="images/home.png" class="ui-btn-left" alt="home" />
         </header>
+        <section data-role="content">
+            <ul id="departmentList" data-role="listview"  data-inset="true"
+                class="ui-nodisc-icon ui-alt-icon">
+                <li data-role="list-divider" data-theme="a">Departments</li>
+                <li><a href="#employees">Accounting <span class="ui-li-count">1</span></a></li>
+                <li><a href="#">Corporate <span class="ui-li-count">3</span></a></li>
+                <li><a href="#">Engineering <span class="ui-li-count">2</span></a></li>
+            </ul>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>ADVP Business App</h4>
+        </footer>
     </div>
 
+    <!-- Employees Page:  showing a list of employees -->
+    <div data-role="page" id="employees">
+        <header data-role="header">
+            <h1>Employee</h1>
+            <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+        </header>
+        <section data-role="content">
+            <ul id="employeeList" data-role="listview">
+                <li>
+                    <a href="">
+                        <img src="" />
+                    </a>
+                </li>
+            </ul>        
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>ADVP Business App</h4>
+        </footer>
+    </div>
 
+    <!-- Employee Details Page:  showing employee details -->
+    <div data-role="page" id="employee">
+        <header data-role="header">
+            <h1>Employee Details</h1>
+            <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+        </header>
+        <section data-role="content"></section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>ADVP Business App</h4>
+        </footer>
+    </div>
     <script src="scripts/jquery-2.2.3.min.js"></script>
     <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
