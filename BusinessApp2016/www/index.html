@@ -23,7 +23,7 @@
             <img src="images/home.png" class="ui-btn-left" alt="home" />
         </header>
         <section data-role="content">
-            <ul id="departmentList" data-role="listview"  data-inset="true"
+            <ul id="departmentList" data-role="listview" data-inset="true"
                 class="ui-nodisc-icon ui-alt-icon">
                 <li data-role="list-divider" data-theme="a">Departments</li>
                 <li><a href="#employees">Accounting <span class="ui-li-count">1</span></a></li>
@@ -46,11 +46,13 @@
         <section data-role="content">
             <ul id="employeeList" data-role="listview">
                 <li>
-                    <a href="">
-                        <img src="" />
+                    <a href="#employee">
+                        <img src="emp_pics/amy_jones.jpg" />
+                        <h2>Sales Representative</h2>
+                        Amy Jones
                     </a>
                 </li>
-            </ul>        
+            </ul>
         </section>
         <footer data-role="footer" data-position="fixed">
             <h4>ADVP Business App</h4>
@@ -64,7 +66,45 @@
             <a data-rel="back" data-icon="back" class="ui-btn-left">Back</a>
             <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
         </header>
-        <section data-role="content"></section>
+        <section data-role="content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <img src="emp_pics/amy_jones.jpg" />
+                </div>
+                <div class="ui-block-b">
+                    <h3>Amy Jones</h3>
+                    <p>Sales Representative</p>
+                    <p>Boston, MA</p>
+                </div>
+            </div>
+            <hr />
+            <ul data-role="listview">
+                <li data-icon="mail">
+                    <a href="mailto:ajones@work.com">
+                        <p>Email</p>
+                        <p>ajones@work.com</p>
+                    </a>
+                </li>
+                <li data-icon="user">
+                    <a href="tel:(617) 000-0010">
+                        <p>Call Office</p>
+                        <p>(617) 000-0010</p>
+                    </a>
+                </li>
+                <li data-icon="phone">
+                    <a href="tel:(718) 000-0010">
+                        <p>Call Cell</p>
+                        <p>(718) 000-0010</p>
+                    </a>
+                </li>
+                <li data-icon="comment">
+                    <a href="sms:(718) 000-0010">
+                        <p>Send Text</p>
+                        <p>(718) 000-0010</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
         <footer data-role="footer" data-position="fixed">
             <h4>ADVP Business App</h4>
         </footer>
