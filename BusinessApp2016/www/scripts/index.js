@@ -14,6 +14,7 @@
         //Start by getting the departments for home page
         getDepartments();
     }
+
 };
 
 //Initialize 
